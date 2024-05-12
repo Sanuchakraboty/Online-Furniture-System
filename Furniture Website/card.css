@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.card{
+width: 20%;
+background-color:;
+border-radius: 5px;
+margin: 25px;
+box-shadow: 2px 2px 10px black;
+display: inline-block;
+}
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius:5px;
+}
+.title{
+    text-align: center;
+    padding: 5px;
+}
+.des{
+    text-align: center;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding:5px;
+    border-radius: 5px;
+
+}
+button:hover{
+    background-color: rgb(26, 33, 134);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+.main{
+  text-align: center;
+  
+}
+.a{
+    text-align: center;
+    border: 1px solid wheat;
+    box-shadow: 2px 2px 10px wheat;
+
+}
+.new{
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgb(245, 246, 247);
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+.image img{
+    transition: transform 1.3s;
+}
