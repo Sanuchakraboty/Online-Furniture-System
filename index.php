@@ -1,71 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include('security.php'); 
+include('include/header.php');
+include('include/navbar.php');
+?>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Login Now</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+<!-- Main Content -->
+<div id="content">
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                    class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+        </div>
+
+        <!-- Content Row -->
+        <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                   Total Registered Admin </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    <?php 
+                                    require 'database/dbconfig.php';
+                                    $query = "SELECT ID FROM register ORDER BY id";
+                                    $query_run=mysqli_query($connection,$query);
+                                    
+                                    $row = mysqli_num_rows($query_run);
+                                    echo'<h5>Total Admin :' .$row.'</h5>';
+                                    ?>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                            <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Total Product ADD</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                <?php 
+                                    require 'database/dbconfig.php';
+                                    $query = "SELECT ID FROM abouts ORDER BY id";
+                                    $query_run=mysqli_query($connection,$query);
+                                    
+                                    $row = mysqli_num_rows($query_run);
+                                    echo'<h5>Total Product :' .$row.'</h5>';
+                                    ?>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-store-alt fa-2x text-gray-300 color-succes"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                </div>
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress progress-sm mr-2">
+                                            <div class="progress-bar bg-info" role="progressbar"
+                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                    Pending Requests</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-comments fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content --
 
 
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link rel="stylesheet" href="Login/style.css">
-
-</head>
-
-<body>
-	<!-- partial:index.partial.html -->
-	<div class="box-form">
-		<div class="left">
-			<div class="overlay">
-				<h1>Welcome User</h1>
-
-				<span>
-					<p>login with social media</p>
-					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
-				</span>
-			</div>
-		</div>
-
-
-		<div class="right">
-			<h5>Login</h5>
-			<p style ="font-weight:bold;"> Don't have an account? Register Now!!! <a href="/E-Commerce/User/Login/reg.php" style="text-decoration:none; font-weight:bold; font-size:large; cursor:pointer;">Creat Your Account</a></p>
-			<form action = "/E-Commerce/User/Login/Sql/userlog.php" class="form" method="post">
-
-
-				<div class="inputs">
-					<input type="text" name="uname" placeholder="user name" required>
-					<br>
-					<input type="password" name="pass" placeholder="password" required>
-
-					<br><br>
-					<div class="remember-me--forget-password">
-						<!-- Angular -->
-						<label>
-							<input type="checkbox" name="item" checked />
-							<span class="text-checkbox">Remember me</span>
-						</label>
-						
-					</div>
-
-					<br>
-					<button type="submit" name="ulog" value= "ulog" style="cursor:pointer;">Login</button>
-				</div>
-
-
-
-
-
-
-			</form>
-
-		</div>
-
-	</div>
-	
-
-</body>
-
-</html>
+    <?php
+    include('include/script.php');
+    include('include/footer.php');
+    ?>
