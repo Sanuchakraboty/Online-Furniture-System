@@ -13,7 +13,13 @@ Author - Sanu Chakraborty
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://img.shields.io/badge/made%20with-bootstrap-%238C3B9B.svg?style=for-the-badge&logo=bootstrap&logoColor=white)](https://forthebadge.com)
+
+&nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
+
+![forthebadge](https://forthebadge.com/images/badges/oooo-kill-em.svg)
+
 
 </center>
 </div>
@@ -39,6 +45,9 @@ My personal portfolio <a href="https://github.com/Sanuchakraboty" target="_blank
 - <img src="https://img.shields.io/badge/html5-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
 - <img src="https://img.shields.io/badge/css3-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
 - <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black" />
+- <img src="https://img.shields.io/badge/bootstrap-%238C3B9B.svg?&style=for-the-badge&logo=bootstrap&logoColor=white
+" />
+
 
 ---
 
