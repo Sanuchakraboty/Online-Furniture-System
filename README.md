@@ -1,7 +1,7 @@
 # Online-Furniture-System
 Author - Sanu Chakraborty
 <h1 align="center">
- <p> OR2S</p> [Online Railway Reservation System]<br/>
+ <p> Online-Furniture-System</p> [Online-Furniture-System]<br/>
   
 </h1>
 
@@ -19,16 +19,16 @@ Author - Sanu Chakraborty
 </div>
 <h3 align="center">
     🔹
-    <a href="https://github.com/rak3xh/or2s-project/issues">Report Bug</a> &nbsp; &nbsp;
+    <a href="https://github.com/Sanuchakraboty">Report Bug</a> &nbsp; &nbsp;
     🔹
-    <a href="https://github.com/rak3xh/or2s-project/issues">Request Feature</a>
+    <a href="">Request Feature</a>
 </h3>
 
 You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to Thanks!
 
 ##
 
-My personal portfolio <a href="https://github.com/Sanuchakraboty" target="_blank">rak3xh.dev </a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://github.com/Sanuchakraboty" target="_blank">Sanu </a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 ## Built With
 
