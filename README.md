@@ -87,11 +87,11 @@ Clone down this repository. You will need `git` and `XAMPP` installed in your sy
 
 1. Open XAMPP server app and start both `MySQL` port and `Apache` port.
 
-2. Open [phpMyAdmin](http://localhost/phpmyadmin/) website and create a new sql database naming `or2s`.
+2. Open [phpMyAdmin](http://localhost/phpmyadmin/) website and create a new sql database naming `Shop System `.
 
-3. Import `User/db/or2s.sql` file from the cloned folder to phpMyAdmin database naming or2s.
+3. Import `User/db/ShopSystem.sql` file from the cloned folder to phpMyAdmin database naming Shop System.
 4. Open `C:/xampp/htdocs` folder in your system and copy paste the entire or2s folder over there.
-5. Open your browser and paste the link [or2s](http://localhost/or2s/user/)
+5. Open your browser and paste the link [Shop System](http://localhost/Shop System/user/)
 
 Runs the website in your browser smoothly and you can enjoy all the features of it.
 
